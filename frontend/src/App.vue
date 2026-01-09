@@ -3,7 +3,7 @@
     <!-- data Tree graph -->
     <TreeGraph
       :data="data"
-      :selectedNode="selectedNode"
+      :selected-node="selectedNode"
       @select="selectedNode = $event"
     />
     <!-- displaying selected node details -->

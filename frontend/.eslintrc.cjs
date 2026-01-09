@@ -20,7 +20,9 @@ module.exports = {
   rules: {
     // Vue
     "vue/multi-word-component-names": "off",
-
+    "vue/max-attributes-per-line":  "off",
+    "vue/html-self-closing": "off",
+    "vue/attributes-order": "off",
     // TypeScript
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
