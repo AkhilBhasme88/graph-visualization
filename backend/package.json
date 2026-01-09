@@ -1,0 +1,38 @@
+{
+  "name": "graph-api-backend",
+  "version": "1.0.0",
+  "description": "Production-ready Express + TypeScript backend with tests and coverage",
+  "private": true,
+  "type": "module",
+  "main": "dist/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prestart": "npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "vue-graph-app": "file:.."
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.17",
+    "@types/express": "4.17.21",
+    "@types/node": "20.11.30",
+    "@types/supertest": "2.0.16",
+    "@vitest/coverage-v8": "1.6.1",
+    "cross-env": "^10.1.0",
+    "supertest": "6.3.4",
+    "tsx": "^4.21.0",
+    "typescript": "5.4.5",
+    "vitest": "1.6.1"
+  }
+}
